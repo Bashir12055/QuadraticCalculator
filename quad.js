@@ -9,7 +9,7 @@ function trigger(){
         var x1 = (-b + (Math.sqrt(d)))/(2*a);
         var x2 =(-b - (Math.sqrt(d)))/(2*a);
         
-        document.getElementById("display").value =  " x1 = "+x1.toFixed(3) + "    x2 = " + x2.toFixed(3)+ " (Real d/f roots)"
+        document.getElementById("display").value =  " x1 = "+x1.toFixed(3) + "    x2 = " + x2.toFixed(3)+ " "
     }
     else if (d<0){
         x1 = (-b)/(2*a);
@@ -18,7 +18,7 @@ function trigger(){
     }
     else{
         x1 = (-b)/(2*a).toFixed(3);
-        document.getElementById("display").value = `x1 = ${x1}     x2 = ${x1} (Real equal roots)` 
+        document.getElementById("display").value = `x1 = ${x1}     x2 = ${x1}` 
         
     }
 }
